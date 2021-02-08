@@ -7,12 +7,23 @@ import {
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      status: 'invalid'
+    }
+  }
+
   render() {
+    const { status } = this.state
+
     return (
       <div className="App">
         <header className="App-header">
           Risk Assessment
         </header>
+        <div className={`status ${status}`}></div>
         <form>
           <Question
             question="Do you have a family history of substance abuse?"
