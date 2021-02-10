@@ -45,7 +45,8 @@ class App extends React.Component {
       })
     } else {
       this.setState({
-        touched: true
+        touched: true,
+        status: 'invalid'
       })
     }
   }
@@ -61,7 +62,6 @@ class App extends React.Component {
 
   render() {
     const { touched, status, familySubstances, personalSubstances, disorders } = this.state
-    console.log(status)
 
     return (
       <div className="App">

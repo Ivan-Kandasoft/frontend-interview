@@ -2,6 +2,7 @@ import React from 'react';
 
 const Choice = (props) => {
   return (
+    <>
     <label>
       <input
         name={props.name}
@@ -11,6 +12,7 @@ const Choice = (props) => {
       ></input>
       <span>{props.label}</span>
     </label>
+    </>
   );
 };
 
