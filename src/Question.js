@@ -13,6 +13,8 @@ const Question = (props) => {
                 name={choice.name}
                 label={choice.label}
                 key={choice.name}
+                value={choice.value}
+                onChange={props.onChange}
               />
             );
           })

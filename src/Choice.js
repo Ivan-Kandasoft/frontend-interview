@@ -6,6 +6,8 @@ const Choice = (props) => {
       <input
         name={props.name}
         type="checkbox"
+        value={props.value}
+        onChange={props.onChange}
       ></input>
       <span>{props.label}</span>
     </label>
